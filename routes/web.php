@@ -19,3 +19,11 @@ Route::get('/', function () {
 });
 
 Route::get('/test', [dbController::class, 'test']);
+
+// Route::get('/index', function () {
+//     return view('index');
+// });
+
+Route::get('/testlayout', function () {
+    return view('testlayout', ['name' => 'Laravel 6.0 範例']);
+});
