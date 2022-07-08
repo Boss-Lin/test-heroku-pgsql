@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\dbController;
+use App\Http\Controllers\InspiringController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,3 +28,5 @@ Route::get('/test', [dbController::class, 'test']);
 Route::get('/testlayout', function () {
     return view('testlayout', ['name' => 'Laravel 6.0 範例']);
 });
+
+Route::get('/inspire', [InspiringController::class, 'inspire']);
